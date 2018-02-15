@@ -12,10 +12,15 @@ php:
 script:
   - make phptest
 
+before_deploy:
+  - make zip
+
 deploy:
   provider: releases
   api_key:
     secure: CwxKy/Q+L8Kk8IV9Pq9dx7mzcCaTCqC/O1othylFDLkp20nT4mlrdKLU/0LojoGO7GpmWPvMmI5Y/TpoWb1XGPoM5m9TYuVFG4Sdr5SMA2wBdhkpsqsnnBp8mlkfkCDcgL+831WbpaJM/8Z0Bb5Gvm0mZ9XHvkNj1Fnpjwm8C4Y7/psHy/FBaE0F0OXx7et6XxWwJB/YKpm22andT4X/Po3wT8PmUVfaYUYxVLcvvuJtu4pKzuyMBV21jXZUGilL1rMvbcLpH9mhqLl7mqmIant5xhKAX/bkG1oD2u1lLTtUcaFBLlQc/MSM/v6WkbLU4FBW6oo6gQgQJglX5d4NkXGp4TVsUCQ1v2IKPofE5ugxvBk6Y6ru06YTkyZ/3cc2qDRIwleynq6pvqW3B556+oj1Ko3jO1d8/7FuthreKo7ZluFwgAf2flXGX6/9JUAairZwEcNnVzE0oCvZXhi5pS9QTf/zB30xVwKkOMd0I8tSPUui+K8fs+3q8Y6Ih7aNlmnPSDNMblUwLYsJ9HQTQKbF5vKr1KdXBC5RDqHyjBH1hsTO7lyklQyFh4vi7Lq9ogqfypMfN7ZA/1H/EWEZ6AlvmGr8hQ9meNLZTfgldqWYJXUScgkssbTM+QXOd5CIF7so6bYtioVepnoWL/nHUXl/fJQUrxhDWZb07TbhYTs=
   file: plg_siginsertbutton.zip
+  skip_cleanup: true
   on:
-    repo: mklkj/sig-insert-button
+    tags: true
+    all_branches: true
