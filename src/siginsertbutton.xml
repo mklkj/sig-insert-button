@@ -8,7 +8,7 @@
     <authorEmail>m.pich@outlook.com</authorEmail>
     <authorUrl>https://github.com/mklkj</authorUrl>
     <version>1.0.0</version>
-    <description>SIG insert button</description>
+    <description>Add the SIG gallery insert button for inserting gallery code in editor</description>
     <updateservers>
         <server type="extension" name="plg_content_livereload" priority="1">https://raw.githubusercontent.com/mklkj/sig-insert-button/master/updates.xml</server>
     </updateservers>
