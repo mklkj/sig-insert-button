@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="editors-xtd" method="upgrade">
+    <name>plg_editors-xtd_siginsertbutton</name>
+    <author>Mikołaj Pich</author>
+    <creationDate>2018-02-15</creationDate>
+    <copyright>Copyright (C) Mikołaj Pich, 2018. All rights reserved.</copyright>
+    <license>GPL</license>
+    <authorEmail>m.pich@outlook.com</authorEmail>
+    <authorUrl>https://github.com/mklkj</authorUrl>
+    <version>1.0.0</version>
+    <description>SIG insert button</description>
+    <updateservers>
+        <server type="extension" name="plg_content_livereload" priority="1">https://raw.githubusercontent.com/mklkj/sig-insert-button/master/updates.xml</server>
+    </updateservers>
+    <files>
+        <filename plugin="siginsertbutton">siginsertbutton.php</filename>
+    </files>
+</extension>

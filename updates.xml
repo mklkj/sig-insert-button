@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>LiveReload Extension</name>
+		<description>Add the LiveReload javascript snippet to frontend output</description>
+		<element>plg_content_livereload</element>
+		<type>plugin</type>
+		<version>1.2.2</version>
+		<client>site</client>
+		<infourl title="plg_content_livereload">https://github.com/mklkj/livereload-snippet-joomla/releases/tag/v1.2.2</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/mklkj/livereload-snippet-joomla/releases/download/v1.2.2/plg_livereload-snippet.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="3.[56789]" />
+	</update>
+</updates>
