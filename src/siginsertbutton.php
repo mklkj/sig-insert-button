@@ -15,7 +15,7 @@ class plgButtonSiginsertbutton extends JPlugin
     	$input = JFactory::getApplication()->input;
 		$id = $input->getInt('id', 0);
 		if($id > 0 && $input->getString('option') == 'com_content' && $input->getString('view') == 'article') {
-		    $c = JTable::getInstance('content'); 
+		    $c = JTable::getInstance('content');
 		    $c->load($id);
 		    $date = date('Y/m', strtotime($c->publish_up));
 		    $alias = $c->alias;
@@ -28,14 +28,14 @@ class plgButtonSiginsertbutton extends JPlugin
 			jInsertEditorText("\n<div>{gallery}galleries/" + txt + "{gallery}</div>\n", editor);
 		}');
 
-        $button = new JObject();		
+        $button = new JObject();
 		$button->modal = false;
 		$button->class = 'btn';
 		$button->link = '#';
 		$button->text = JText::_('Insert SIG code');
 		$button->name = 'plus';
 		$button->onclick = 'sampleXTDButtonClick(\''.$name.'\'); return false;';
-		
+
         return $button;
     }
 }
