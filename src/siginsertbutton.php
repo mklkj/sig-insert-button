@@ -25,7 +25,7 @@ class plgButtonSiginsertbutton extends JPlugin
         $doc->addScriptDeclaration('function sampleXTDButtonClick(editor) {
 			txt = prompt("Please enter path to gallery", "'.$date.'/'.$alias.'");
 			if (!txt) return;
-			jInsertEditorText("\n<div>{gallery}galleries/" + txt + "{gallery}</div>\n", editor);
+			jInsertEditorText("\n<div>{gallery}galleries/" + txt + "{/gallery}</div>\n", editor);
 		}');
 
         $button = new JObject();
